@@ -1,9 +1,14 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Greeting from './components/Greeting';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="App-header">Hello World</h1>
+      <Routes>
+        <Route path="/" element={<Greeting />} />
+      </Routes>
     </div>
   );
 }
