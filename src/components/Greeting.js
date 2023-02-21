@@ -8,7 +8,8 @@ const Greeting = () => {
 
   useEffect(() => {
     dispatch(greet());
-    console.log('greeting', greeting);
+    // this line is required to run uesEffect once without any dependencies
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
